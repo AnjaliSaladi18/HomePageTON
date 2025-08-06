@@ -3,7 +3,7 @@
     padding: 0 70px;
     display: flex;
     justify-content: center;
-    gap: 26%;
+    gap: 29%;
     align-items: center;
 }
 
@@ -14,7 +14,7 @@
 .menu__container a {
     text-decoration: none;
     color: black;
-    padding: 0.9em;
+    padding: 0.8em;
     font-weight: bold;
     letter-spacing: 0.5px;
 }
