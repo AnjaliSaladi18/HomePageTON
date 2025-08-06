@@ -1,0 +1,167 @@
+.footer__image img {
+    width: 100%;
+}
+
+.footer {
+    position: relative;
+}
+
+.footer__content {
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    color: #fff;
+}
+
+.footer__content h1 {
+    font-size: 3.5em;
+    width: 50%;
+    line-height: 100%;
+    letter-spacing: 1px;
+}
+
+.footer__content p {
+    font-size: 16px;
+    width: 49%;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    margin-top: 30px;
+    color: white;
+}
+
+.button__container {
+    position: relative;
+}
+
+.button__container img {
+    width: 22%;
+    height: 75px;
+    margin-top: 20px;
+}
+
+.button__container p {
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button__container i {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.button__container p:hover i {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.footer__container {
+    position: absolute;
+    top: 60%;
+    left: 13%;
+    color: #fff;
+    display: flex;
+    gap: 80px;
+}
+
+.footer-logo img {
+    width: 200px;
+    margin-bottom: 25px;
+}
+
+.footer-subcontainer1 {
+    width: 25%;
+}
+
+.footer-icons {
+    margin: 35px 0 20px 0;
+}
+
+.footer-icons i {
+    font-size: 15px;
+    margin: 0px 30px 15px 0;
+}
+
+.language-box {
+    margin-top: 30px;
+    display: flex;
+}
+
+.language-box i {
+    font-size: 17px;
+    margin-right: 6px;
+}
+
+.language-box select {
+    font-size: 1em;
+    border: none;
+    background-color: black;
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+.footer-copyright p a {
+    text-decoration: none;
+}
+
+.footer__container p {
+    margin-bottom: 10px;
+    font-size: 0.93em;
+}
+
+.footer-copyright p {
+    font-size: 0.7em;
+    color: #aaa8a8;
+    margin-top: 15px;
+}
+
+.footer__container .heading {
+    color: #aaa8a8;
+    margin-bottom: 25px;
+}
+
+.footer-subcontainer2 {
+    width: 70%;
+    display: flex;
+    gap: 95px;
+}
+
+.aboutcompany-container,
+.opportunity-container,
+.support-container {
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.footer__image {
+    position: relative;
+}
+
+.app-container {
+    position: absolute;
+    bottom: 2.5%;
+    left: 13%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 10;
+}
+
+.app-container p {
+    color: #aaa8a8;
+}
+
+.app__image__container {
+    display: flex;
+    gap: 20px;
+}
+
+.app__image__container img {
+    width: 35%;
+}

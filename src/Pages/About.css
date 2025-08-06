@@ -1,0 +1,217 @@
+@font-face {
+  font-family: 'Araboto';
+  src: url('/fonts/araboto-normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+    font-family: 'Araboto';
+}
+.landing-banner {
+    margin: 70px 20px 20px 20px;
+    background-color: #F5F7FA;
+    border-radius: 20px;
+    padding: 60px 25px 22px 25px;
+}
+
+.banner-content {
+    display: flex;
+    gap: 7%;
+}
+
+.banner-title {
+    font-size: 52px;
+    font-weight: 500;
+    width: 100%;
+    line-height: 100%;
+}
+
+.banner-description p {
+    width: 90%;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: gray;
+    margin-top: 12px;
+}
+
+.banner-buttons button {
+    padding: 12px 55px 15px 55px;
+    font-size: 20px;
+    margin: 40px 40px 50px 0;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.banner-buttons .btn1 {
+    background-color: black;
+    color: white;
+}
+
+.banner-buttons .btn2 {
+    background-color: white;
+}
+
+.banner-image img {
+    width: 100%;
+    height: auto;
+}
+
+.taglinebanner_label2 {
+    font-family: 'Playfair Display';
+    font-size: 45px;
+}
+
+.taglinebanner_label3 {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-size: 45px;
+}
+
+.tagline-banner {
+    margin: 40px 50px;
+    background-color: #e8eef8;
+    height: 250px;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding: 70px 37px;
+}
+
+.experice {
+    padding: 13px 48px;
+    font-size: 20px;
+    margin: 50px 80px;
+    border-radius: 10px;
+    background-color: white;
+}
+.services-container{
+    margin: 20px auto 100px auto;
+    padding: 0 75px;
+    display: flex;
+    align-items: center;
+}
+.services-content{
+    width: 50%;
+    height: auto;
+}
+.services-image{
+    width: 50%;
+}
+.services-content h1{
+    font-size: 55px;
+    font-weight: 500;
+}
+.services-content h3{
+    font-size: 35px;
+    font-weight: 500;
+}
+.services-content p{
+    font-size: 17px;
+    color: #4c4c4c;
+    margin-top: 30px;
+    width: 90%;
+}
+.services-content button{
+    padding: 10px 70px 16px 70px;
+    font-size: 25px;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    margin-top: 70px;
+    font-weight: 600;
+}
+.services-content button:hover{
+    cursor: pointer;
+    color: #f5f5f5;
+}
+.analytics-container{
+    margin: 80px auto;
+    padding: 0 75px;
+    display: flex;
+    align-items: center;
+}
+.analytics-content{
+    width: 60%;
+    padding-left: 120px;
+}
+.analytics-image{
+    width: 43%;
+}
+.analytics-content h1{
+    font-size: 55px;
+    font-weight: 500;
+}
+.analytics-content h3{
+    font-size: 35px;
+    font-weight: 500;
+}
+.analytics-content p{
+    font-size: 17px;
+    color: #4c4c4c;
+    margin-top: 20px;
+    width: 90%;
+}
+.analytics-content button{
+    padding: 13px 60px 15px 60px;
+    font-size: 20px;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    margin-top: 50px;
+    font-weight: 600;
+}
+.value_container{
+    margin: 50px auto;
+    padding: 0px 100px;
+    margin-bottom: 90px;
+}
+.value_container .values-title{
+    font-size: 47px;
+    font-weight: 500;
+    padding-top: 30px;
+}
+.values-container h1{
+    font-size: 2.5em;
+    font-weight: 600;
+    padding-bottom: 5px;
+    margin-top: 40px;
+}
+.values-container h2{
+    font-size: 2em;
+    font-weight: 500;
+    margin: 50px 0 20px 0;
+}
+.values-container p{
+    font-family: 'Araboto';
+    font-size: 17px;
+    color: rgb(62, 61, 61);
+    line-height: 140%;
+}
+.values-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18%;
+}
+.value-container1 , .value-container2, .value-container3, .value-container4 , .value-container5, .value-container6{ 
+    width: 40%;
+}
+
+.disclosures-box {
+    margin: 80px auto;
+    padding: 0 60px;
+}
+
+.disclosures-box h1 {
+    font-size: 1.3em;
+}
+
+.disclosures-box p {
+    font-size: 16px;
+    padding-top: 20px;
+    color: #6f6f6f;
+}
+.chart-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+}

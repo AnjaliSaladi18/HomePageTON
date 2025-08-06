@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'Araboto';
+  src: url('fonts/araboto.woff2') format('woff2'),
+       url('fonts/araboto.woff') format('woff'),
+       url('fonts/araboto.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.brokers__container {
+    margin: 30px auto;
+    padding: 0 60px;
+    display: flex;
+}
+
+.brokers__image {
+    width: 55%;
+}
+
+.brokers__image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    object-fit: cover;
+}
+
+.brokers__content {
+    background-color: #eeeeee;
+    width: 55%;
+    background: linear-gradient(to top, #f0f0f0, #dfdede);
+    padding: 40px;
+    border-radius: 10px 0 0 10px;
+}
+
+.brokers__content h1 {
+    font-weight: 450;
+    font-size: 3.2rem;
+    line-height: 100%;
+    width: 80%;
+}
+
+.brokers__content p {
+    margin: 20px 0;
+    width: 80%;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+}
+
+.brokers__content h6 {
+    font-size: 0.8em;
+    padding: 10px 0;
+    padding-top: 90px;
+}
+
+.assets__container {
+    font-weight: bold;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+}
+
+.dot {
+    margin: 0 10px;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 0;
+    display: inline-block;
+}
