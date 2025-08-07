@@ -1,5 +1,5 @@
 import React from "react";
-import './Termsofuse.css'
+import './TermsofUse.css'
 import Header from "../components/TrainingCards/Header";
 import Footer from "../components/TrainingCards/Footer";
 function TermsofUse() {
