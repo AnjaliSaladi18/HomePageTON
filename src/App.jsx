@@ -9,10 +9,11 @@ import Disclaimer from "./Pages/Disclaimer";
 import Accessibility from "./Pages/Accessibility";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import TermsofUse from "./Pages/TermsofUse";
-
+import ScrollToTop from "./components/TrainingCards/ScrollToTop";
 function App() {
   return (
     <Router>
+      <ScrollToTop></ScrollToTop>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Welcome" element={<Welcome />} />

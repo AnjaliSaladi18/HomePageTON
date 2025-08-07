@@ -39,7 +39,7 @@ function TermsofUse() {
                     </ul>
                 </div>
             </div>
-            <div className="services-container">
+            <div className="tonservices-container">
                 <div className="termsofuse-title-container">
                     <h1>PROVISION OF SERVICES BY ToN</h1>
                 </div>

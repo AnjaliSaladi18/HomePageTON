@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import { Link } from 'react-router-dom'
 function Footer() {
     return (
         <div className="footer">
@@ -53,7 +54,9 @@ function Footer() {
                 <div className="footer-subcontainer2">
                     <div className="footer-subcontainer21">
                         <div className="aboutcompany-container">
-                            <p className="heading">About Company</p>
+                            <p className="heading">
+                                <Link to={"/About"} style={{color:'inherit', textDecoration:'none'}}>About Company</Link>
+                            </p>
                             <p>Who are we</p>
                             <p>Sebi Disclousures</p>
                             <p>Overview</p>
@@ -75,11 +78,19 @@ function Footer() {
                             <p>Careers</p>
                         </div>
                         <div className="disclamiers-container">
-                            <p className="heading">Disclamiers</p>
+                            <p className="heading">
+                                <Link to="/Disclaimer" style={{ color: 'inherit', textDecoration: 'none' }}>Disclaimers</Link>
+                            </p>
                             <p>Cookies Concern</p>
-                            <p>Terms and Conditions</p>
-                            <p>Privacy Policy</p>
-                            <p>Accessibility Statement</p>
+                            <p>
+                                <Link to="/TermsofUse" style={{color:'inherit', textDecoration:'none'}}>Terms and Conditions</Link>
+                            </p>
+                            <p>
+                                <Link to="/PrivacyPolicy" style={{color:'inherit', textDecoration:'none'}}>Privacy Policy</Link>
+                            </p>
+                            <p>
+                                <Link to="/Accessibility" style={{color:'inherit', textDecoration:'none'}}>Accessibility Statement</Link>
+                            </p>
                         </div>
                     </div>
                     <div className="footer-subcontainer23">
