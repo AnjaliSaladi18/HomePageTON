@@ -1,0 +1,111 @@
+.termsofuse-container{
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 950px;
+}
+.termsofuse-container h1{
+    font-size: 75px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 40%;
+    line-height: 100%;
+}
+.termsofuse-container img{
+    height: 170px;
+    margin-top: 10px;
+}
+.introduction-container, .terms-container, .services-container, .useofservices-container{
+    margin: auto;
+    padding: 0;
+    max-width: 950px;
+}
+.termsofuse-title-container{
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    padding: 35px 0;
+    margin: 40px 0;
+}
+.termsofuse-title-container h1{
+    font-size: 2.1em;
+}
+.termsofuse-content-container .termsofuse-description{
+    font-size: 1em;
+    line-height: 120%;
+    margin: 30px 0;
+    color: rgb(109, 105, 105);                                                                                                                                                  
+}
+.termsofuse-content-container .termsofuse-description b{
+    color: black; 
+    font-size: 14px;
+    letter-spacing: 0.4px !important;
+}
+.termsofuse-content-container .termsofuse-title{
+    font-size: 1.1em;
+    line-height: 120%;
+    font-weight: 600;
+}
+.termsofuse-description-list b{
+    letter-spacing: 0.4px ;
+    color: black;
+}
+.sublist {
+    list-style: none;        
+    margin-left: 60px;  
+    margin-top: 13px; 
+}
+.sublist li {
+    position: relative;
+    padding-left: 20px;         
+    color: rgb(109, 105, 105);  
+}
+.sublist li::before {
+    content: '';
+    position: absolute;
+    top: 0.6em;                 
+    left: 0;
+    width: 7px;
+    height: 7px;
+    background-color: black;  
+    border-radius: 50%;        
+}
+.termsofuse-description-list {
+    position: relative;
+    padding-left: 20px;
+}
+
+.termsofuse-description-list > li {
+    position: relative;
+    margin-bottom: 20px;
+    color: rgb(109, 105, 105);
+    display: block;
+}
+.termsofuse-description-list > li::before {
+    content: '';
+    position: absolute;
+    left: -2%;
+    top: 0.55em; 
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 3px;
+}
+.services-container{
+    display: block;
+}
+.termsofuse-risk-disclosures-container{
+    margin: auto;
+    padding: 0;
+    max-width: 950px;
+}
+.termsofuse-risk-disclosures-container h1{
+    margin: 70px 0 30px 0;
+}
+.termsofuse-risk-disclosures-container p{
+    color: rgb(109, 105, 105);
+    margin-bottom: 80px;
+}
+.termsofuse-risk-disclosures-container b{
+    font-size: 14px;
+}

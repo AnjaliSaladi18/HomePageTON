@@ -160,7 +160,6 @@ function About() {
                             borderRadius: '0',
                             boxShadow: 'none'
                         }}
-
                     >
                         <Bar data={data} options={options} />
                     </div>

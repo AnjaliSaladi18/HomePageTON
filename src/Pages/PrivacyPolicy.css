@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Araboto';
+  src: url('/fonts/araboto-normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.privacy-policy-container{
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 950px;
+}
+
+.privacy-policy-content h1{
+    font-size: 65px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.privacy-policy-content p{
+    font-size: 21px;
+    padding-top: 1.5%;
+    width: 80%;
+}
+.privacy-policy p b{
+    letter-spacing: 0.5px;
+}
+.privacy-policy-image img{
+    height: 200px;
+    margin-top: 35px;
+}
+.userconsent-container, .information-container , .information-colleted-container, .personal-information-container, .anonymous-info-container, .thirdparty-websites-container, .datasecurity-container, .policy-container, .contact-info-container{
+    margin: auto;
+    padding: 0;
+    max-width: 950px;
+}
+.privacy-policy-title-container{
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    padding: 35px 0;
+    margin: 50px 0;
+}
+.privacy-policy-title-container h1{
+    font-size: 2.1em;
+}
+.privacy-policy-content-container .privacy-policy-description{
+    font-size: 1em;
+    line-height: 120%;
+    margin: 30px 0;
+    color: rgb(109, 105, 105);
+}
+.privacy-policy-content-container .privacy-policy-description b{
+    color: black; 
+    font-size: 15px;
+    letter-spacing: 0.5px !important;
+}
+.privacy-policy-content-container .privacy-policy-title{
+    font-size: 1.1em;
+    line-height: 120%;
+    font-weight: 600;
+}
+.privacy-policy-description-list li{
+    display: flex;
+    padding-bottom: 20px;
+    gap: 15px;
+    position: relative;
+    color: rgb(109, 105, 105);
+}
+
+.privacy-policy-description-list li::before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 3px;
+    margin-top:9px;
+}
+.end-desc{
+    margin: 5px 0 !important;
+}
+.privacy-policy-risk-disclosures-container{
+    margin: auto;
+    padding: 0;
+    max-width: 950px;
+}
+.privacy-policy-risk-disclosures-container h1{
+    margin: 70px 0 30px 0;
+}
+.privacy-policy-risk-disclosures-container p{
+    color: rgb(109, 105, 105);
+    margin-bottom: 80px;
+}
+.privacy-policy-risk-disclosures-container b{
+    font-size: 14px;
+}

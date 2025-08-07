@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Araboto';
+  src: url('/fonts/araboto-normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.disclaimer-container{
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 950px;
+}
+
+.disclaimer-content h1{
+    font-size: 65px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.disclaimer-content p{
+    font-size: 22px;
+    padding-top: 1.5%;
+    width: 75%;
+}
+.disclaimer-content p b{
+    letter-spacing: 0.5px;
+}
+.disclaimer-image img{
+    height: 200px;
+    margin-top: 35px;
+}
+.warning-container{
+    margin: auto;
+    padding: 0;
+    max-width: 950px;
+}
+.title-container{
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    padding: 35px 0;
+    margin: 40px 0;
+}
+.title-container h1{
+    font-size: 2.1em;
+}
+.content-container .title{
+    font-size: 1.1em;
+    line-height: 120%;
+    font-weight: 600;
+}
+.content-container .description{
+    font-size: 1em;
+    line-height: 120%;
+    margin: 30px 0;
+    color: rgb(109, 105, 105);
+    margin-bottom: 70px;
+}
+.disclosure-container{
+    margin: auto;
+    padding: 0;
+    max-width: 950px;
+}
+.description-list li{
+    display: flex;
+    padding-bottom: 20px;
+    gap: 15px;
+    position: relative;
+}
+
+.description-list li::before{
+    content: '';
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 3px;
+    vertical-align: middle;
+    margin-top:6.5px;
+}
+.warranty-container{
+    margin: auto;
+    padding: 0;
+    max-width: 950px;
+}
+.fiduciary-container{
+    margin: auto;
+    padding: 0;
+    max-width: 950px;
+}
+.grievance-container{
+    margin: auto;
+    padding: 0;
+    max-width: 950px;
+}
+.risk-disclosures-container{
+    margin: auto;
+    padding: 0;
+    max-width: 950px;
+}
+.risk-disclosures-container h1{
+    margin-bottom: 40px;
+}
+.risk-disclosures-container p{
+    color: rgb(131, 129, 129);
+    margin-bottom: 80px;
+}
+.risk-disclosures-container b{
+    font-size: 15px;
+}
+.content-container .description b{
+    color: rgb(109, 105, 105) !important;
+    font-size: 15px;
+}

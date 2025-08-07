@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'Araboto';
+  src: url('/fonts/araboto-normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.accessibility-container{
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 950px;
+}
+.accessibility-container h1{
+    font-size: 75px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 40%;
+    line-height: 100%;
+}
+.accessibility-container img{
+    height: 180px;
+}
+.commitment-container{
+    margin: auto;
+    padding: 0;
+    max-width: 950px;
+}
+.accessibility-title-container{
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    padding: 35px 0;
+    margin: 40px 0;
+}
+.accessibility-title-container h1{
+    font-size: 2.1em;
+}
+.accessibility-content-container .accessibility-description{
+    font-size: 1em;
+    line-height: 120%;
+    margin: 30px 0;
+    color: rgb(109, 105, 105);
+}
+.accessibility-content-container .accessibility-description b{
+    color: black; 
+    font-size: 14px;
+    letter-spacing: 0.4px !important;
+}
+.accessibility-content-container .accessibility-title{
+    font-size: 1.1em;
+    line-height: 120%;
+    font-weight: 600;
+}
+.improvements-container, .feedback-container, .features-container, .awareness-container, .platform-specific-container, .analysis-container, .contactus-container{
+    margin: auto;
+    padding: 0;
+    max-width: 950px;
+}
+.accessibility-description-list li{
+    display: flex;
+    padding-bottom: 20px;
+    gap: 15px;
+    position: relative;
+    color: rgb(109, 105, 105);
+}
+
+.accessibility-description-list li::before{
+    content: '';
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 3px;
+    vertical-align: middle;
+    margin-top:9px;
+}
+
+.accessibility-description-list b{
+    letter-spacing: 0.4px ;
+    color: black;
+}
+.platform-specific-container .accessibility-description{
+     margin-bottom: 20px;
+}
+.accessibility-risk-disclosures-container{
+    margin: auto;
+    padding: 0;
+    max-width: 950px;
+}
+.accessibility-risk-disclosures-container h1{
+    margin: 70px 0 30px 0;
+}
+.accessibility-risk-disclosures-container p{
+    color: rgb(109, 105, 105);
+    margin-bottom: 80px;
+}
+.accessibility-risk-disclosures-container b{
+    font-size: 14px;
+}
