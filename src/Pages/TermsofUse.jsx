@@ -7,12 +7,12 @@ function TermsofUse() {
         <>
             <Header></Header>
             <div className="termsofuse-container">
-                <h1>TERMS OF USE</h1>
+                <h1>Terms Of Use</h1>
                 <img src="/images/T & C.png" alt="TERMSOFUSE" />
             </div>
             <div className="introduction-container">
                 <div className="termsofuse-title-container">
-                    <h1>INTRODUCTION</h1>
+                    <h1>Introduction</h1>
                 </div>
                 <div className="termsofuse-content-container">
                     <p className="termsofuse-description">
@@ -22,7 +22,7 @@ function TermsofUse() {
             </div>
             <div className="terms-container">
                 <div className="termsofuse-title-container">
-                    <h1>ACCEPTING TERMS</h1>
+                    <h1>Accepting Terms</h1>
                 </div>
                 <div className="termsofuse-content-container">
                     <p className="termsofuse-description"><b>Trade on Numbers</b> is a product of <b>[Your Legal Entity Name, Srivas Analytical India Private Limited]</b> (referred to as "ToN" or "we/us/our" hereafter).</p>
@@ -41,7 +41,7 @@ function TermsofUse() {
             </div>
             <div className="tonservices-container">
                 <div className="termsofuse-title-container">
-                    <h1>PROVISION OF SERVICES BY ToN</h1>
+                    <h1>Provision of Services by ToN</h1>
                 </div>
                 <div className="termsofuse-content-container">
                     <ul className='termsofuse-description-list'>
@@ -55,7 +55,7 @@ function TermsofUse() {
             </div>
             <div className="useofservices-container">
                 <div className="termsofuse-title-container">
-                    <h1>USE OF THE SERVICES BY YOU</h1>
+                    <h1>Use of The Services by You</h1>
                 </div>
                 <div className="termsofuse-content-container">
                     <ul className='termsofuse-description-list'>

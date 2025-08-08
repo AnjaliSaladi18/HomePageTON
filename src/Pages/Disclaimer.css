@@ -62,7 +62,7 @@
 }
 .description-list li{
     display: flex;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     gap: 15px;
     position: relative;
 }
