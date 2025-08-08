@@ -1,5 +1,6 @@
 .footer__image img {
-    width: 100%;
+    max-width: 100%;
+    max-height: auto;
 }
 
 .footer {
@@ -8,23 +9,22 @@
 
 .footer__content {
     position: absolute;
-    top: 5%;
-    left: 7%;
+    top: 5em;
+    left: 8%;
     color: #fff;
 }
 
 .footer__content h1 {
-    font-size: 3.5em;
-    width: 50%;
+    font-size: 3.8em;
+    max-width: 450px;
     line-height: 100%;
     letter-spacing: 1px;
 }
 
 .footer__content p {
     font-size: 16px;
-    width: 49%;
+    max-width: 600px;
     font-weight: 300;
-    letter-spacing: 0.5px;
     margin-top: 30px;
     color: white;
 }
@@ -34,15 +34,15 @@
 }
 
 .button__container img {
-    width: 22%;
-    height: 75px;
+    max-width: 40%;
+    max-height: 80px;
     margin-top: 20px;
 }
 
 .button__container p {
     position: absolute;
-    top: 15%;
-    left: 7%;
+    top: 12%;
+    left: 12.5%;
     color: #000;
     font-size: 15px;
     font-weight: 600;
@@ -62,15 +62,15 @@
 
 .footer__container {
     position: absolute;
-    top: 60%;
+    top: 61%;
     left: 13%;
     color: #fff;
     display: flex;
-    gap: 80px;
+    gap: 10%;
 }
 
 .footer-logo img {
-    width: 200px;
+    max-width: 200px;
     margin-bottom: 25px;
 }
 
@@ -79,35 +79,35 @@
 }
 
 .footer-icons {
-    margin: 35px 0 20px 0;
+    margin: 1em 0;
 }
 
 .footer-icons i {
-    font-size: 15px;
-    margin: 0px 30px 15px 0;
+    font-size: 1.1em;
+    margin: 0px 1.3em 1.2em 0;
 }
 
 .language-box {
-    margin-top: 30px;
+    margin-top: 1.2em;
     display: flex;
 }
 
 .language-box i {
-    font-size: 17px;
-    margin-right: 6px;
+    font-size: 1.1em;
+    margin-right: 0.3em;
 }
 
 .language-box select {
-    font-size: 1em;
+    font-size: 0.92em;
     border: none;
-    background-color: black;
+    background-color: inherit;
     color: white;
-    margin-bottom: 15px;
+    margin-bottom: 1em;
 }
 
 
-.footer-copyright p a {
-    text-decoration: none;
+.footer-copyright p span {
+   color: blue;
 }
 
 .footer__container p {
@@ -125,20 +125,21 @@
     color: #aaa8a8;
     margin-bottom: 25px;
 }
-.footer__container .heading Link{
+
+.footer__container .heading Link {
     text-decoration: none;
 }
+
 .footer-subcontainer2 {
-    width: 70%;
     display: flex;
-    gap: 95px;
 }
 
 .aboutcompany-container,
 .opportunity-container,
 .support-container {
-    margin-bottom: 40px;
-    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    margin-right: 6.5em;
 }
 
 .footer__image {
@@ -147,12 +148,11 @@
 
 .app-container {
     position: absolute;
-    bottom: 2.5%;
+    bottom: 2%;
     left: 13%;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    z-index: 10;
 }
 
 .app-container p {
@@ -166,4 +166,21 @@
 
 .app__image__container img {
     width: 35%;
+}
+
+@media screen and (min-width: 1400px) {
+    .footer__container {
+        gap: 12%;
+    }
+
+    .aboutcompany-container,
+    .opportunity-container,
+    .support-container {
+        margin-right: 9.5em;
+    }
+
+    .app-container {
+        bottom: 5%;
+    }
+
 }

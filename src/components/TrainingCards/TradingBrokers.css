@@ -10,6 +10,7 @@
     margin: 30px auto;
     padding: 0 60px;
     display: flex;
+    max-width: 1400px;
 }
 
 .brokers__image {

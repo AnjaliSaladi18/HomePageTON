@@ -45,7 +45,7 @@ function Footer() {
                     </div>
                     <div className="footer-copyright">
                         <p>Select market data provided by
-                            <a href="#"> ICE Data services</a>
+                            <span> ICE Data services</span>
                         </p>
                         <p>Select reference data provided by FactSet. Copyright &copy; 2025 FactSet Research Systems Inc.</p>
                         <p>&copy; 2025 Trade on Numbers, Inc.</p>

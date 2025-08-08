@@ -10,6 +10,7 @@ import Accessibility from "./Pages/Accessibility";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import TermsofUse from "./Pages/TermsofUse";
 import ScrollToTop from "./components/TrainingCards/ScrollToTop";
+import Chart from "./Pages/Chart";
 function App() {
   return (
     <Router>
@@ -22,6 +23,7 @@ function App() {
         <Route path="/Accessibility" element={<Accessibility></Accessibility>}></Route>
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy></PrivacyPolicy>}></Route>
         <Route path="/TermsofUse" element={<TermsofUse></TermsofUse>}></Route>
+        <Route path="/Chart" element={<Chart></Chart>}></Route>
       </Routes>
     </Router>
   );
