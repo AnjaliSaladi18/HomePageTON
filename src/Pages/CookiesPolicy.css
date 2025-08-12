@@ -16,19 +16,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 10px 30px 15px 30px;
 }
 .cookies-img img{
     width: 60px;
 }
 .heading-content p {
-    font-size: 16px;
+    font-size: 15px;
     color: black;
 }
 .policy-group{
     border-top: 1px solid gainsboro;
     border-bottom: 1px solid gainsboro;
-    padding: 7px 40px 15px 30px;
+    padding: 7px 40px 20px 30px;
 }
 .policy-row {
     display: flex;
@@ -47,7 +47,7 @@
 
 .policy-text p {
     color: #333;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 ul li {
@@ -109,7 +109,7 @@ input {
     color: #e6e6e6;
 }
 .cookies-policy-buttons{
-    padding: 15px 20px;
+    padding: 20px 20px 20px 30px;
     display: flex;
     gap: 20px;
 }
