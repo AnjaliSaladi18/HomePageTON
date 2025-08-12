@@ -28,7 +28,7 @@
 .policy-group{
     border-top: 1px solid gainsboro;
     border-bottom: 1px solid gainsboro;
-    padding: 7px 40px 20px 30px;
+    padding: 7px 40px 22px 30px;
 }
 .policy-row {
     display: flex;
@@ -41,8 +41,8 @@
 }
 
 .policy-text h2 {
-    margin: 8px 0;
-    font-size: 22px;
+    margin: 13px 0 5px 0;
+    font-size: 20px;
 }
 
 .policy-text p {
@@ -55,7 +55,7 @@ ul li {
 }
 
 .list-heading {
-    margin-bottom: 7px;
+    margin-bottom: 5px;
 }
 
 .switch {
