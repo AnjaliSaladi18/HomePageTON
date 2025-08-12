@@ -11,6 +11,8 @@ import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import TermsofUse from "./Pages/TermsofUse";
 import ScrollToTop from "./components/TrainingCards/ScrollToTop";
 import Chart from "./Pages/Chart";
+import CookiesPopup from "./Pages/CookiesPopup";
+import CookiesPolicy from "./Pages/CookiesPolicy";
 function App() {
   return (
     <Router>
@@ -24,6 +26,8 @@ function App() {
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy></PrivacyPolicy>}></Route>
         <Route path="/TermsofUse" element={<TermsofUse></TermsofUse>}></Route>
         <Route path="/Chart" element={<Chart></Chart>}></Route>
+        <Route path="/CookiesPopup" element={<CookiesPopup></CookiesPopup>}></Route>
+        <Route path="/CookiesPolicy" element={<CookiesPolicy></CookiesPolicy>}></Route>
       </Routes>
     </Router>
   );

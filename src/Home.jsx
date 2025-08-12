@@ -1,11 +1,17 @@
-import { React, useRef } from 'react'
+import { React, useRef, useState } from 'react'
 import './Home.css';
 import Header from './components/TrainingCards/Header.jsx';
 import TrainingCards from './components/TrainingCards/TrainingCards.jsx';
 import TradingBrokers from './components/TrainingCards/TradingBrokers.jsx';
 import Footer from './components/TrainingCards/Footer.jsx';
+import CookiesPopup from './Pages/CookiesPopup.jsx';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import CookiesPolicy from './Pages/CookiesPolicy.jsx';
 const Home = () => {
+  const [showPolicy, setShowPolicy] = useState(false);
+  const handleLearnMore = () => {
+    setShowPolicy(true);
+  };
   return (
     <section className='Home' id='Home'>
       <Header></Header>
@@ -96,6 +102,13 @@ const Home = () => {
           Overall, SEBI’s disclosure framework ensures that critical information flows promptly and fairly to all stakeholders. For investors, it enables informed decision-making; for companies, it builds credibility and reduces legal risks; and for the market as a whole, it promotes efficiency, reduces speculation, and deters malpractice.</p>
       </div>
       <Footer></Footer>
+      <CookiesPopup onLearnMore={handleLearnMore} />
+      {showPolicy && (
+        <CookiesPolicy
+          onSave={() => setShowPolicy(false)}
+          onClose={() => setShowPolicy(false)}
+        />
+      )}
     </section >
   )
 }
