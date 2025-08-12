@@ -42,7 +42,8 @@
 
 .policy-text h2 {
     margin: 13px 0 5px 0;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 500;
 }
 
 .policy-text p {

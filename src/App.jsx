@@ -13,6 +13,7 @@ import ScrollToTop from "./components/TrainingCards/ScrollToTop";
 import Chart from "./Pages/Chart";
 import CookiesPopup from "./Pages/CookiesPopup";
 import CookiesPolicy from "./Pages/CookiesPolicy";
+import FIIandDII from "./Pages/FIIandDII";
 function App() {
   return (
     <Router>
@@ -28,6 +29,7 @@ function App() {
         <Route path="/Chart" element={<Chart></Chart>}></Route>
         <Route path="/CookiesPopup" element={<CookiesPopup></CookiesPopup>}></Route>
         <Route path="/CookiesPolicy" element={<CookiesPolicy></CookiesPolicy>}></Route>
+        <Route path="/FIIandDII" element={<FIIandDII></FIIandDII>}></Route>
       </Routes>
     </Router>
   );
