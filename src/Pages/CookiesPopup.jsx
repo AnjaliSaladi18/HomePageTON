@@ -1,24 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import './CookiesPopup.css'
-function CookiesPopup({ onLearnMore }) {
+function CookiesPopup({onLearnMore}) {
     const [visible, setVisible] = useState(false);
 
     useEffect(() => {
-        const cookiesAccepted = localStorage.getItem("cookiesAccepted");
-        if (!cookiesAccepted) {
-            const timer = setTimeout(() => setVisible(true), 2000);
-            return () => clearTimeout(timer);
-        }
+        const timer = setTimeout(() => setVisible(true), 2000);
+        return () => clearTimeout(timer);
     }, []);
-
-    const handleAccept = () => {
-        localStorage.setItem("cookiesAccepted", "true");
-        setVisible(false);
-    };
     const handleLearnMore = () => {
-        setVisible(false);
+        setVisible(false);      
         if (onLearnMore) {
-            onLearnMore();
+            onLearnMore();      
         }
     };
     if (!visible) return null;
@@ -31,7 +23,7 @@ function CookiesPopup({ onLearnMore }) {
                             <h2>Cookies</h2>
                         </div>
                         <div className="button-container">
-                            <button className="accept" onClick={handleAccept}>Accept cookies</button>
+                            <button className="accept" onClick={() => setVisible(false)}>Accept cookies</button>
                             <button className="learn-more" onClick={handleLearnMore}>Learn more</button>
                         </div>
                     </div>
