@@ -66,7 +66,9 @@ function Footer() {
                             <p className="heading">Knowledge Hub</p>
                             <p>Training Room</p>
                             <p>Historical Data</p>
-                            <p>DII/FII Analytics</p>
+                            <p>
+                                <Link to="/FIIandDII" style={{color:'inherit', textDecoration:'none'}}>DII/FII Analytics</Link>
+                            </p>
                             <p>FAQ's</p>
                         </div>
                     </div>
