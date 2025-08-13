@@ -1,7 +1,7 @@
 .header__container {
     max-width: 1400px;
     margin: 30px auto;
-    padding: 0 70px;
+    padding: 0 55px 0 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,7 +14,7 @@
 .menu__container a {
     text-decoration: none;
     color: black;
-    padding: 0.8em;
+    padding: 0.85em;
     font-weight: bold;
     letter-spacing: 0.5px;
 }

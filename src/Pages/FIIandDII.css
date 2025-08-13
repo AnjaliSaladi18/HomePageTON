@@ -1,0 +1,141 @@
+.activity-container {
+    max-width: 1400px;
+    margin: 70px auto;
+    padding: 0 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.activity-container .FII-DII-content {
+    width: 25%;
+}
+
+.activity-container h1 {
+    font-size: 50px;
+    width: 20%;
+    line-height: 1;
+}
+
+.activity-container p {
+    font-size: 15px;
+    line-height: 1.3;
+    margin-top: 10px;
+    text-align: justify;
+    color: #7a7777;
+}
+
+.activity-container h3 {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.FII-DII-buttons {
+    margin-top: 40px;
+    background-color: black;
+    padding: 10px 20px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    border-radius: 13px;
+}
+
+.FII-DII-buttons button {
+    padding: 3px 11px 5px;
+    border-radius: 9px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    background: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.FII-DII-buttons button:hover {
+    background-color: white;
+    color: black;
+}
+
+.FII-DII-buttons .active {
+    background-color: white;
+    color: black;
+}
+.FIIDII-chart-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 30px 40px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+}
+.custom-legend {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.legend-pill {
+  width: 18px;
+  height: 8px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 4px;
+}
+.data-table {
+  overflow: hidden;
+  font-size: 13px;
+}
+.data-table th, td{
+    padding: 11px 3px;
+}
+.data-table-container{
+    max-width: 1200px;
+    margin: 70px auto;
+}
+.data-table thead{
+    background-color: rgb(244, 242, 242);
+}
+.FIIDII-risk-disclosures-container{
+    margin: auto;
+    padding: 0;
+    max-width: 1200px;
+}
+.FIIDII-risk-disclosures-container h1{
+    margin: 70px 0 30px 0;
+}
+.FIIDII-risk-disclosures-container p{
+    color: rgb(109, 105, 105);
+    margin-bottom: 80px;
+    font-size: 13px;
+}
+.FIIDII-risk-disclosures-container b{
+    font-size: 14px;
+}
+@media (max-width: 900px) {
+    .activity-container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .activity-container .FII-DII-content {
+        width: 100%;
+    }
+}
