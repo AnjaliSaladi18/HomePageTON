@@ -20,27 +20,27 @@ function FIIandDII() {
   const datasets = {
     daily: {
       labels: ["28 Jul", "27 Jul", "26 Jul", "25 Jul", "24 Jul", "23 Jul", "22 Jul", "21 Jul", "20 Jul", "19 Jul", "18 Jul", "17 Jul"],
-      fii: [80117.71, 78213.47, 73345.43, 62399.32, 64274.25, 82796.13, 91442.02, 70923.58, 83130.42, 110135.28, 68367.93, 79392.73],
-      dii: [-24300.05, -17932.45, -9490.54, -8291.00, -7609.42, -12390.17, -12635.58, -18637.99, -25513.43, -33144.78, -32574.63, -24734.28],
-      overall: [55817.66, 60281.02, 63854.89, 54108.32, 56664.83, 70405.96, 78806.44, 52285.59, 57616.99, 76990.50, 35793.63, 54658.45]
+      fii: [30117.71, 38213.47, 33345.43, 32399.32, 24274.25, 22796.13, 31442.02, 30923.58, 40130.42, 40135.28, 17367.93, 29392.73],
+      dii: [-24300.05, -17932.45, -10490.54, -18291.00, -7609.42, -12390.17, -12635.58, -18637.99, -25513.43, -33144.78, -12574.63, -24734.28],
+      overall: [5817.66, 20281.02, 13854.89, 14108.32, 16664.83, 10405.96, 18806.44, 12285.59, 14616.99, 6990.50, 5793.63, 4658.45]
     },
     weekly: {
       labels: ["28 Jul", "21 Jul", "14 Jul", "07 Jul", "30 Jun", "23 Jun", "16 Jun", "09 Jun", "02 Jun"],
-      fii: [80117.71, 78213.47, 73345.43, 62399.32, 64274.25, 82796.13, 91442.02, 70923.58, 83130.42],
-      dii: [-24300.05, -17932.45, -9490.54, -8291.00, -7609.42, -12390.17, -12635.58, -18637.99, -25513.43],
-      overall: [55817.66, 60281.02, 63854.89, 54108.32, 56664.83, 70405.96, 78806.44, 52285.59, 57616.99]
+      fii: [30117.71, 38213.47, 33345.43, 32399.32, 24274.25, 22796.13, 31442.02, 30923.58, 30130.42],
+      dii: [-24300.05, -17932.45, -10490.54, -18291.00, -7609.42, -12390.17, -12635.58, -18637.99, -25513.43],
+      overall: [5817.66, 20281.02, 13854.89, 14108.32, 16664.83, 10405.96, 18806.44, 12285.59, 4616.99]
     },
     monthly: {
-      labels: ["April 2025","May 2025", "Jun 2025", "Jul 2025"],
-      fii: [60376.48,40135.28, 83130.42, 62399.32 ],
-      dii: [-29467.84,-33144.78, -25513.43, -8291.00 ],
-      overall: [30908.64,6990.50, (83130.42 - 25513.43),(62399.32 - 8291.00)]
+      labels: ["April 2025", "May 2025", "Jun 2025", "Jul 2025"],
+      fii: [40376.48, 40135.28, 33130.42, 32399.32],
+      dii: [-29467.84, -33144.78, -25513.43, -8291.00],
+      overall: [10908.64, 6990.50, (33130.42 - 25513.43), (32399.32 - 8291.00)]
     },
     custom: {
       labels: ["16 Jun", "09 Jun", "02 Jun", "26 May"],
-      fii: [91442.02, 70923.58, 83130.42, 110135.28],
-      dii: [-12635.58, -18637.99, -25513.43, -33144.78],
-      overall: [78806.44, 52285.59, 57616.99, 76990.50]
+      fii: [41442.02, 30923.58, 43130.42, 20135.28],
+      dii: [-12635.58, -18637.99, -25513.43, -13144.78],
+      overall: [28806.44, 12285.59, 17616.99, 6990.50]
     }
   };
 
@@ -66,7 +66,7 @@ function FIIandDII() {
         data: datasets[view].dii,
         backgroundColor: '#000000',
         barThickness: 20,
-        borderRadius: 5
+        borderRadius: 2
       },
       {
         type: 'bar',
@@ -74,7 +74,7 @@ function FIIandDII() {
         data: datasets[view].fii,
         backgroundColor: '#1976d2',
         barThickness: 20,
-        borderRadius: 5
+        borderRadius: 2
       }
     ]
   };
@@ -87,24 +87,29 @@ function FIIandDII() {
     scales: {
       x: {
         ticks: { display: false },
-        grid: { drawTicks: false }
+        grid: {
+          drawOnChartArea: false,
+          drawTicks: false
+        },
+        border: { display: false }
       },
       y: {
-        beginAtZero: true
+        beginAtZero: true,
+        border:{display:false}
       }
     }
   };
   const data = [
-    { date: "12 Aug 2025", fiiBuy: 59593.29, fiiSell: 80117.71, diiBuy: 77311.75, diiSell: 53011.70 },
-    { date: "11 Aug 2025", fiiBuy: 64660.56, fiiSell: 78213.47, diiBuy: 71907.48, diiSell: 53975.03 },
-    { date: "08 Aug 2025", fiiBuy: 66673.86, fiiSell: 73345.43, diiBuy: 69033.33, diiSell: 59542.79 },
-    { date: "07 Aug 2025", fiiBuy: 57888.20, fiiSell: 62399.32, diiBuy: 65952.48, diiSell: 57661.48 },
-    { date: "06 Aug 2025", fiiBuy: 57669.69, fiiSell: 64274.25, diiBuy: 68527.37, diiSell: 60917.95 },
-    { date: "05 Aug 2025", fiiBuy: 87219.40, fiiSell: 82796.13, diiBuy: 96472.49, diiSell: 84082.32 },
-    { date: "04 Aug 2025", fiiBuy: 100151.62, fiiSell: 91442.02, diiBuy: 80350.36, diiSell: 67714.78 },
-    { date: "01 Aug 2025", fiiBuy: 69777.07, fiiSell: 70923.58, diiBuy: 78732.59, diiSell: 60095.30 },
-    { date: "31 Jul 2025", fiiBuy: 79564.54, fiiSell: 83130.42, diiBuy: 78932.38, diiSell: 53418.95 },
-    { date: "30 Jul 2025", fiiBuy: 109716.92, fiiSell: 110135.28, diiBuy: 81205.51, diiSell: 48060.73 },
+    { date: "12 Aug 2025", fiiBuy: 70766.35, fiiSell: 40648.64, diiBuy: 77311.75, diiSell: 53011.70 },
+    { date: "11 Aug 2025", fiiBuy: 64573.64, fiiSell: 26360.17, diiBuy: 71907.48, diiSell: 53975.03 },
+    { date: "08 Aug 2025", fiiBuy: 57964.64, fiiSell: 24619.21, diiBuy: 69033.33, diiSell: 59542.79 },
+    { date: "07 Aug 2025", fiiBuy: 76004.96, fiiSell: 43645.64, diiBuy: 65952.48, diiSell: 57661.48 },
+    { date: "06 Aug 2025", fiiBuy: 44919.89, fiiSell: 20645.64, diiBuy: 68527.37, diiSell: 60917.95 },
+    { date: "05 Aug 2025", fiiBuy: 37219.40, fiiSell: 14423.27, diiBuy: 96472.49, diiSell: 84082.32 },
+    { date: "04 Aug 2025", fiiBuy: 30144.54, fiiSell: 61586.56, diiBuy: 80350.36, diiSell: 67714.78 },
+    { date: "01 Aug 2025", fiiBuy: 59358.22, fiiSell: 28434.64, diiBuy: 78732.59, diiSell: 60095.30 },
+    { date: "31 Jul 2025", fiiBuy: 34652.32, fiiSell: 74782.60, diiBuy: 78932.38, diiSell: 53418.95 },
+    { date: "30 Jul 2025", fiiBuy: 65628.62, fiiSell: 25493.34, diiBuy: 81205.51, diiSell: 48060.73 },
   ];
 
   return (
@@ -145,7 +150,7 @@ function FIIandDII() {
           </span>
         </div>
       </div>
-      <div className="data-table-container" style={{ border: "1px solid #ddd", borderRadius: "10px", overflow: 'hidden' }}>
+      <div className="data-table-container" style={{ border: "1px solid #ddd", borderRadius: "10px", overflow: 'hidden',borderBottom: 'none' }}>
         <table style={{ borderCollapse: "collapse", width: "100%", textAlign: "center" }} className='data-table'>
           <thead>
             <tr>
@@ -169,15 +174,15 @@ function FIIandDII() {
 
               return (
                 <tr key={i}>
-                  <td >{row.date}</td>
-                  <td style={{ borderLeft: '1px solid #ddd' }}>{row.fiiBuy.toLocaleString()}</td>
-                  <td >{row.fiiSell.toLocaleString()}</td>
-                  <td style={{ color: fiiNet >= 0 ? "green" : "red" }}>
+                  <td style={{ borderBottom: '1px solid #ddd'}}>{row.date}</td>
+                  <td style={{ borderLeft: '1px solid #ddd', borderBottom: '1px solid #ddd' }}>{row.fiiBuy.toLocaleString()}</td>
+                  <td style={{ borderBottom: '1px solid #ddd'}}>{row.fiiSell.toLocaleString()}</td>
+                  <td style={{ color: fiiNet >= 0 ? "green" : "red" , borderBottom: '1px solid #ddd'}}>
                     {fiiNet >= 0 ? "+" : ""}{fiiNet.toLocaleString(undefined, { minimumFractionDigits: 2 })}
                   </td>
-                  <td style={{ borderLeft: '1px solid #ddd' }}>{row.diiBuy.toLocaleString()}</td>
-                  <td >{row.diiSell.toLocaleString()}</td>
-                  <td style={{ color: diiNet >= 0 ? "green" : "red" }}>
+                  <td style={{ borderLeft: '1px solid #ddd', borderBottom: '1px solid #ddd' }}>{row.diiBuy.toLocaleString()}</td>
+                  <td style={{ borderBottom: '1px solid #ddd'}}>{row.diiSell.toLocaleString()}</td>
+                  <td style={{ color: diiNet >= 0 ? "green" : "red", borderBottom: '1px solid #ddd' }}>
                     {diiNet >= 0 ? "+" : ""}{diiNet.toLocaleString(undefined, { minimumFractionDigits: 2 })}
                   </td>
                 </tr>
