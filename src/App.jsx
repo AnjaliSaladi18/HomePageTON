@@ -14,6 +14,7 @@ import Chart from "./Pages/Chart";
 import CookiesPopup from "./Pages/CookiesPopup";
 import CookiesPolicy from "./Pages/CookiesPolicy";
 import FIIandDII from "./Pages/FIIandDII";
+import Terminal from "./Pages/Terminal";
 function App() {
   return (
     <Router>
@@ -30,6 +31,7 @@ function App() {
         <Route path="/CookiesPopup" element={<CookiesPopup></CookiesPopup>}></Route>
         <Route path="/CookiesPolicy" element={<CookiesPolicy></CookiesPolicy>}></Route>
         <Route path="/FIIandDII" element={<FIIandDII></FIIandDII>}></Route>
+        <Route path="/Terminal" element={<Terminal></Terminal>}></Route>
       </Routes>
     </Router>
   );
